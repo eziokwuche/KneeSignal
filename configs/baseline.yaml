@@ -1,0 +1,22 @@
+# All paths are runtime arguments, so this configuration works locally and in Kaggle.
+experiment: resnet18-2p5d-v1
+seed: 42
+
+data:
+  image_size: 224
+  slices_per_series: 24
+  max_series_per_study: 5
+  workers: 2
+
+training:
+  folds: 5
+  selected_fold: 0
+  epochs: 4
+  batch_size: 6
+  learning_rate: 0.0002
+  weight_decay: 0.0001
+  pseudo_label_weight: 0.55
+
+inference:
+  tta: false
+  output: submission.csv

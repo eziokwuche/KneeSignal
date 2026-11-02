@@ -1,0 +1,38 @@
+# Python and notebook artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.coverage
+.ipynb_checkpoints/
+
+# Local data, checkpoints, and generated competition artifacts
+data/
+artifacts/
+outputs/
+*.pt
+*.pth
+*.ckpt
+submission.csv
+
+# Local environment files
+.venv/
+.env
+
+# Generated files and private exports
+*.egg-info/
+build/
+dist/
+.qodo/
+.ruff_cache/
+*.dcm
+*.dicom
+*.csv
+*.zip
+*.tar
+*.npy
+*.npz
+*.pkl
+*.safetensors
+.env.*
+!.env.example

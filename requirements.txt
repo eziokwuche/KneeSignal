@@ -1,0 +1,3 @@
+# Local development dependencies. Kaggle supplies compatible GPU builds of
+# PyTorch; install the platform-appropriate torch wheels locally if needed.
+-e .[dev]
